@@ -31,16 +31,19 @@ object RandomicoUtil {
         return gerarValorRandomico().toLong()
     }
 
-    fun gerarValorRandomicoDoubleAte(limit: Double): Double? {
-        val leftLimit = 1.0
-        return leftLimit + random.nextDouble() * (limit - leftLimit)
+    fun gerarValorRandomicoDoubleAte(limit: Double): Double {
+        return Double.MIN_VALUE + random.nextDouble() * (limit - Double.MIN_VALUE)
+    }
+
+    fun gerarValorRandomicoDoubleAteCom(limit: Double, casasDecimais: Int): Double {
+        return gerarValorRandomicoDoubleAte(limit).let { BigDecimal.valueOf(it).setScale(casasDecimais, RoundingMode.HALF_UP).toDouble() }
     }
 
     fun gerarValorRandomicoDecimalAte(limit: Double): BigDecimal? {
-        return gerarValorRandomicoDoubleAte(limit)?.let { BigDecimal.valueOf(it).setScale(2, RoundingMode.HALF_UP) }
+        return gerarValorRandomicoDoubleAte(limit).let { BigDecimal.valueOf(it).setScale(2, RoundingMode.HALF_UP) }
     }
 
     fun gerarValorRandomicoDecimal(): BigDecimal? {
-        return gerarValorRandomicoDoubleAte(LIMITE_MAX_RANDOMICO_NUMERICO)?.let { BigDecimal.valueOf(it).setScale(2, RoundingMode.HALF_UP) }
+        return gerarValorRandomicoDoubleAte(LIMITE_MAX_RANDOMICO_NUMERICO).let { BigDecimal.valueOf(it).setScale(2, RoundingMode.HALF_UP) }
     }
 }
