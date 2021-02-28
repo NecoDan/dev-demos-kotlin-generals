@@ -1,3 +1,3 @@
-package br.com.dev.demos.kotlin.generals.blogs
+package blogs
 
 data class Pessoa(val nome: String)

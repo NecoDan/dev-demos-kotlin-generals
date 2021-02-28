@@ -1,4 +1,4 @@
-package br.com.dev.demos.kotlin.generals.blogs
+package blogs
 
 import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
 
