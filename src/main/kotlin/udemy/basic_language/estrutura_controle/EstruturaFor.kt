@@ -1,6 +1,6 @@
 package udemy.basic_language.estrutura_controle
 
-import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
+import utils.RandomicoUtil
 
 /*
 *  Estrutura de repetição For

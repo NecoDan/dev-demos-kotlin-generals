@@ -1,6 +1,6 @@
 package blogs
 
-import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
+import utils.RandomicoUtil
 
 fun main(args: Array<String>) {
     println("Blog - Controle de Fluxo.\n")

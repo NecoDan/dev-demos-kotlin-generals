@@ -1,4 +1,4 @@
-package br.com.dev.demos.kotlin.generals.utils
+package utils
 
 import java.math.BigDecimal
 import java.math.RoundingMode

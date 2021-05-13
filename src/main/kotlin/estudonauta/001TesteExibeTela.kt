@@ -1,4 +1,4 @@
-package com.kotlin.estudonauta.testes
+package estudonauta
 
 /**
  * Programa teste para simples exibição na tela

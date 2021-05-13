@@ -1,4 +1,4 @@
-package com.kotlin.estudonauta.testes
+package estudonauta
 
 fun main(args: Array<String>) {
 

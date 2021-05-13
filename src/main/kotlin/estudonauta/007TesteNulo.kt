@@ -4,7 +4,6 @@ package com.kotlin.estudonauta.testes
 fun main(args: Array<String>) {
 
     // EstaticosTesteNulo.safeCall()
-
     EstaticosTesteNulo.elvis()
 
 }
@@ -43,9 +42,7 @@ class EstaticosTesteNulo {
 
         // NULL-CHECK = !!
         //
-        fun nullCheck(){
-
-        }
+        fun nullCheck(){}
 
     }
 }

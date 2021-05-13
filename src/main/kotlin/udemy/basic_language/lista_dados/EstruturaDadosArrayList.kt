@@ -1,6 +1,6 @@
 package udemy.basic_language.lista_dados
 
-import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
+import utils.RandomicoUtil
 
 fun main(args: Array<String>) {
     println("Udemy - Aprenda o básico da linguagem Kotlin: Lista Dados ArrayList .\n")

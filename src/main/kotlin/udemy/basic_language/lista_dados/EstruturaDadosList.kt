@@ -1,6 +1,6 @@
 package udemy.basic_language.lista_dados
 
-import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
+import utils.RandomicoUtil
 
 /*Sabe-se que:
 *  List & MutableList são coleções ordenadas nas quais a ordem de inserção dos elementos são mantidas.
@@ -29,7 +29,7 @@ fun main(args: Array<String>) {
     println("Tamanho total da lista STRING = " + stringList.size)
     println("Elementos contidos na lista STRING:")
     stringList.forEach { println(it) }
-    println ("")
+    println("")
 
     /*No entanto, a MutableList herda List e suporta acesso de leitura / gravação. Pode-se adicionar, atualizar ou remover elementos.*/
     val intMutableList = mutableListOf<Int>(

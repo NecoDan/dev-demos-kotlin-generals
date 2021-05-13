@@ -1,6 +1,6 @@
 package udemy.basic_language.desafio_dado
 
-import br.com.dev.demos.kotlin.generals.utils.RandomicoUtil
+import utils.RandomicoUtil
 
 /*
 *  Criando uma solução para desafio de dados

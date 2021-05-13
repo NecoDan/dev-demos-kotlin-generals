@@ -1,8 +1,10 @@
-package com.kotlin.estudonauta.testes
+package estudonauta
 
 fun main(args: Array<String>) {
 
     var id:Long = 123123123L
+    var id2 = 123123123L
+
     var localizao:Long = 5_000_000L
 
     var idade:Short = 30
